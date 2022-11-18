@@ -2,10 +2,16 @@
 	let showDropDown = false;
 	export let selectedValue;
 	export let values = [];
+	export let update;
+
+	function updateDate(i) {
+		selectedValue = i;
+		update();
+		console.log('innertriggered');
+	}
 </script>
 
-<div on:blur={() => (showDropDown = false)}>
-	<label id="listbox-label" class="block text-sm font-medium text-gray-700">Assigned to</label>
+<div>
 	<div class="relative mt-1">
 		<button
 			on:click={() => (showDropDown = !showDropDown)}
@@ -46,9 +52,7 @@
       -->
 
 		<ul
-			class="{showDropDown
-				? ''
-				: 'transition ease-in duration-100 opacity-0'} absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+			class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
 			tabindex="-1"
 			role="listbox"
 			aria-labelledby="listbox-label"
@@ -61,14 +65,14 @@
         -->
 			{#each values as value, i}
 				<li
-					class="text-gray-900 relative cursor-default select-none py-2 pl-8 pr-4"
+					class="text-gray-900 relative cursor-default select-none py-2 pl-8 pr-4 hover:text-orange-600"
 					id="listbox-option-0"
 					role="option"
 				>
 					<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
 					<span
 						on:click={() => {
-							selectedValue = i;
+							update();
 						}}
 						class="font-normal block truncate">{value}</span
 					>

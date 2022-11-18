@@ -1,7 +1,7 @@
 <script>
 	import calendarize from 'calendarize';
 	import DateSelector from '$lib/components/DateSelector/index.svelte';
-
+	const date = new Date();
 	let months = [
 		'Jan',
 		'Feb',
@@ -17,7 +17,6 @@
 		'Dec'
 	];
 
-	const date = new Date();
 	let selected_day = date.getDate();
 	let selected_month = date.getMonth();
 	let selected_year = date.getFullYear();
@@ -25,6 +24,13 @@
 	let current = calendarize(date);
 	let prev = calendarize(new Date(selected_year, selected_month - 1));
 	let next = calendarize(new Date(selected_year, selected_month + 1));
+
+	function updateCalendar() {
+		console.log('triggered');
+		let current = calendarize(new Date(selected_year, selected_month));
+		let prev = calendarize(new Date(selected_year, selected_month - 1));
+		let next = calendarize(new Date(selected_year, selected_month + 1));
+	}
 
 	function toPrev() {
 		[current, next] = [prev, current];
@@ -77,7 +83,7 @@
 		</button>
 		<div class="grow justify-self-center text-center font-semibold">
 			({selected_day}, {months[selected_month]}, {selected_year})
-			<DateSelector values={months} bind:selectedValue={selected_month} />
+			<DateSelector values={months} bind:selectedValue={selected_month} update={updateCalendar} />
 		</div>
 		<button
 			on:click={toNext}
