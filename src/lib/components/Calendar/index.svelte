@@ -1,6 +1,7 @@
 <script>
 	import calendarize from 'calendarize';
-	import DateSelector from '$lib/components/DateSelector/index.svelte';
+	import MonthSelector from '$lib/components/MonthSelector/index.svelte';
+	import YearSelector from '$lib/components/YearSelector/index.svelte';
 	const date = new Date();
 	let months = [
 		'Jan',
@@ -20,16 +21,22 @@
 	let selected_day = date.getDate();
 	let selected_month = date.getMonth();
 	let selected_year = date.getFullYear();
+	console.log(date);
+
+	let years = [];
+
+	for (let i = selected_year; i >= 1900; i--) {
+		years.push(i);
+	}
 
 	let current = calendarize(date);
 	let prev = calendarize(new Date(selected_year, selected_month - 1));
 	let next = calendarize(new Date(selected_year, selected_month + 1));
 
 	function updateCalendar() {
-		console.log('triggered');
-		let current = calendarize(new Date(selected_year, selected_month));
-		let prev = calendarize(new Date(selected_year, selected_month - 1));
-		let next = calendarize(new Date(selected_year, selected_month + 1));
+		current = calendarize(new Date(selected_year, selected_month));
+		prev = calendarize(new Date(selected_year, selected_month - 1));
+		next = calendarize(new Date(selected_year, selected_month + 1));
 	}
 
 	function toPrev() {
@@ -53,12 +60,18 @@
 
 		next = calendarize(new Date(selected_year, selected_month + 1));
 	}
+
+	function isToday(i) {
+		return (
+			date.getDate() == i &&
+			selected_month == date.getMonth() &&
+			selected_year == date.getFullYear()
+		);
+	}
 </script>
 
-<h1 class="text-3xl font-bold underline">{selected_day}, {selected_month}, {selected_year}</h1>
-
 <!-- calendar container -->
-<div class="">
+<div class="min-w-fit max-w-lg">
 	<div class="flex items-center text-gray-900">
 		<button
 			on:click={toPrev}
@@ -81,9 +94,18 @@
 				/>
 			</svg>
 		</button>
-		<div class="grow justify-self-center text-center font-semibold">
-			({selected_day}, {months[selected_month]}, {selected_year})
-			<DateSelector values={months} bind:selectedValue={selected_month} update={updateCalendar} />
+		<div class="flex flex-row grow gap-x-4 justify-center">
+			<MonthSelector
+				values={months}
+				bind:selectedValue={selected_month}
+				update={() => updateCalendar()}
+			/>
+
+			<YearSelector
+				values={years}
+				bind:selectedValue={selected_year}
+				update={() => updateCalendar()}
+			/>
 		</div>
 		<button
 			on:click={toNext}
@@ -107,6 +129,7 @@
 			</svg>
 		</button>
 	</div>
+
 	<div class="mt-6 grid grid-cols-7 text-xs leading-6 text-gray-500">
 		<div>SUN</div>
 		<div>MON</div>
@@ -126,10 +149,15 @@
 						<button
 							type="button"
 							class="bg-white py-1.5 text-gray-900 hover:bg-gray-100 focus:z-10"
+							on:click={() => (selected_day = current[weekIndex][dayIndex])}
 						>
 							<time
 								datetime="{selected_year}-{selected_month + 1}-{current[weekIndex][dayIndex]}"
-								class="mx-auto flex h-7 w-7 items-center justify-center rounded-full"
+								class="{isToday(current[weekIndex][dayIndex])
+									? 'bg-indigo-600 text-white'
+									: selected_day == current[weekIndex][dayIndex]
+									? 'bg-gray-900 text-white'
+									: ''} mx-auto flex h-7 w-7 items-center justify-center rounded-full"
 								>{current[weekIndex][dayIndex]}</time
 							>
 						</button>
@@ -145,7 +173,7 @@
                         -->
 							<time
 								datetime="{selected_year}-{selected_month}-{prev[prev.length - 1][dayIndex]}"
-								class="mx-auto flex h-7 w-7 items-center justify-center rounded-full"
+								class=" mx-auto flex h-7 w-7 items-center justify-center rounded-full"
 								>{prev[prev.length - 1][dayIndex]}</time
 							>
 						</button>
