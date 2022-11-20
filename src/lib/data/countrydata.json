@@ -1,0 +1,1247 @@
+[
+	{
+		"CountryName": "Afghanistan",
+		"CountryCode": "AF",
+		"AverageAge": 65.173
+	},
+	{
+		"CountryName": "Åland Islands",
+		"CountryCode": "AX",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Albania",
+		"CountryCode": "AL",
+		"AverageAge": 78.686
+	},
+	{
+		"CountryName": "Algeria",
+		"CountryCode": "DZ",
+		"AverageAge": 77.063
+	},
+	{
+		"CountryName": "American Samoa",
+		"CountryCode": "AS",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Andorra",
+		"CountryCode": "AD",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Angola",
+		"CountryCode": "AO",
+		"AverageAge": 61.487
+	},
+	{
+		"CountryName": "Anguilla",
+		"CountryCode": "AI",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Antarctica",
+		"CountryCode": "AQ",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Antigua and Barbuda",
+		"CountryCode": "AG",
+		"AverageAge": 77.146
+	},
+	{
+		"CountryName": "Argentina",
+		"CountryCode": "AR",
+		"AverageAge": 76.813
+	},
+	{
+		"CountryName": "Armenia",
+		"CountryCode": "AM",
+		"AverageAge": 75.224
+	},
+	{
+		"CountryName": "Aruba",
+		"CountryCode": "AW",
+		"AverageAge": 76.434
+	},
+	{
+		"CountryName": "Australia",
+		"CountryCode": "AU",
+		"AverageAge": 83.2
+	},
+	{
+		"CountryName": "Austria",
+		"CountryCode": "AT",
+		"AverageAge": 81.19268293
+	},
+	{
+		"CountryName": "Azerbaijan",
+		"CountryCode": "AZ",
+		"AverageAge": 73.123
+	},
+	{
+		"CountryName": "Bahamas",
+		"CountryCode": "BS",
+		"AverageAge": 74.053
+	},
+	{
+		"CountryName": "Bahrain",
+		"CountryCode": "BH",
+		"AverageAge": 77.419
+	},
+	{
+		"CountryName": "Bangladesh",
+		"CountryCode": "BD",
+		"AverageAge": 72.868
+	},
+	{
+		"CountryName": "Barbados",
+		"CountryCode": "BB",
+		"AverageAge": 79.308
+	},
+	{
+		"CountryName": "Belarus",
+		"CountryCode": "BY",
+		"AverageAge": 74.22682927
+	},
+	{
+		"CountryName": "Belgium",
+		"CountryCode": "BE",
+		"AverageAge": 80.79512195
+	},
+	{
+		"CountryName": "Belize",
+		"CountryCode": "BZ",
+		"AverageAge": 74.754
+	},
+	{
+		"CountryName": "Benin",
+		"CountryCode": "BJ",
+		"AverageAge": 62.077
+	},
+	{
+		"CountryName": "Bermuda",
+		"CountryCode": "BM",
+		"AverageAge": 82.05609756
+	},
+	{
+		"CountryName": "Bhutan",
+		"CountryCode": "BT",
+		"AverageAge": 72.08
+	},
+	{
+		"CountryName": "Bolivia (Plurinational State of)",
+		"CountryCode": "BO",
+		"AverageAge": 71.771
+	},
+	{
+		"CountryName": "Bonaire, Sint Eustatius and Saba",
+		"CountryCode": "BQ",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Bosnia and Herzegovina",
+		"CountryCode": "BA",
+		"AverageAge": 77.545
+	},
+	{
+		"CountryName": "Botswana",
+		"CountryCode": "BW",
+		"AverageAge": 69.793
+	},
+	{
+		"CountryName": "Bouvet Island",
+		"CountryCode": "BV",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Brazil",
+		"CountryCode": "BR",
+		"AverageAge": 76.084
+	},
+	{
+		"CountryName": "British Indian Ocean Territory",
+		"CountryCode": "IO",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Brunei Darussalam",
+		"CountryCode": "BN",
+		"AverageAge": 75.998
+	},
+	{
+		"CountryName": "Bulgaria",
+		"CountryCode": "BG",
+		"AverageAge": 73.60731707
+	},
+	{
+		"CountryName": "Burkina Faso",
+		"CountryCode": "BF",
+		"AverageAge": 61.981
+	},
+	{
+		"CountryName": "Burundi",
+		"CountryCode": "BI",
+		"AverageAge": 61.916
+	},
+	{
+		"CountryName": "Cabo Verde",
+		"CountryCode": "CV",
+		"AverageAge": 73.166
+	},
+	{
+		"CountryName": "Cambodia",
+		"CountryCode": "KH",
+		"AverageAge": 70.054
+	},
+	{
+		"CountryName": "Cameroon",
+		"CountryCode": "CM",
+		"AverageAge": 59.626
+	},
+	{
+		"CountryName": "Canada",
+		"CountryCode": "CA",
+		"AverageAge": 81.74878049
+	},
+	{
+		"CountryName": "Cayman Islands",
+		"CountryCode": "KY",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Central African Republic",
+		"CountryCode": "CF",
+		"AverageAge": 53.679
+	},
+	{
+		"CountryName": "Chad",
+		"CountryCode": "TD",
+		"AverageAge": 54.505
+	},
+	{
+		"CountryName": "Chile",
+		"CountryCode": "CL",
+		"AverageAge": 80.329
+	},
+	{
+		"CountryName": "China",
+		"CountryCode": "CN",
+		"AverageAge": 77.097
+	},
+	{
+		"CountryName": "Christmas Island",
+		"CountryCode": "CX",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Cocos (Keeling) Islands",
+		"CountryCode": "CC",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Colombia",
+		"CountryCode": "CO",
+		"AverageAge": 77.46
+	},
+	{
+		"CountryName": "Comoros",
+		"CountryCode": "KM",
+		"AverageAge": 64.525
+	},
+	{
+		"CountryName": "Congo",
+		"CountryCode": "CG",
+		"AverageAge": 64.804
+	},
+	{
+		"CountryName": "Congo (Democratic Republic of the)",
+		"CountryCode": "CD",
+		"AverageAge": 60.971
+	},
+	{
+		"CountryName": "Cook Islands",
+		"CountryCode": "CK",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Costa Rica",
+		"CountryCode": "CR",
+		"AverageAge": 80.465
+	},
+	{
+		"CountryName": "Côte d'Ivoire",
+		"CountryCode": "CI",
+		"AverageAge": 58.104
+	},
+	{
+		"CountryName": "Croatia",
+		"CountryCode": "HR",
+		"AverageAge": 77.72439024
+	},
+	{
+		"CountryName": "Cuba",
+		"CountryCode": "CU",
+		"AverageAge": 78.892
+	},
+	{
+		"CountryName": "Curaçao",
+		"CountryCode": "CW",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Cyprus",
+		"CountryCode": "CY",
+		"AverageAge": 81.135
+	},
+	{
+		"CountryName": "Czechia",
+		"CountryCode": "CZ",
+		"AverageAge": 78.22682927
+	},
+	{
+		"CountryName": "Denmark",
+		"CountryCode": "DK",
+		"AverageAge": 81.55121951
+	},
+	{
+		"CountryName": "Djibouti",
+		"CountryCode": "DJ",
+		"AverageAge": 67.49
+	},
+	{
+		"CountryName": "Dominica",
+		"CountryCode": "DM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Dominican Republic",
+		"CountryCode": "DO",
+		"AverageAge": 74.257
+	},
+	{
+		"CountryName": "Ecuador",
+		"CountryCode": "EC",
+		"AverageAge": 77.216
+	},
+	{
+		"CountryName": "Egypt",
+		"CountryCode": "EG",
+		"AverageAge": 72.15
+	},
+	{
+		"CountryName": "El Salvador",
+		"CountryCode": "SV",
+		"AverageAge": 73.533
+	},
+	{
+		"CountryName": "Equatorial Guinea",
+		"CountryCode": "GQ",
+		"AverageAge": 59.057
+	},
+	{
+		"CountryName": "Eritrea",
+		"CountryCode": "ER",
+		"AverageAge": 66.679
+	},
+	{
+		"CountryName": "Estonia",
+		"CountryCode": "EE",
+		"AverageAge": 78.34634146
+	},
+	{
+		"CountryName": "Eswatini",
+		"CountryCode": "SZ",
+		"AverageAge": 60.721
+	},
+	{
+		"CountryName": "Ethiopia",
+		"CountryCode": "ET",
+		"AverageAge": 66.953
+	},
+	{
+		"CountryName": "Falkland Islands (Malvinas)",
+		"CountryCode": "FK",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Faroe Islands",
+		"CountryCode": "FO",
+		"AverageAge": 83.09268293
+	},
+	{
+		"CountryName": "Fiji",
+		"CountryCode": "FJ",
+		"AverageAge": 67.561
+	},
+	{
+		"CountryName": "Finland",
+		"CountryCode": "FI",
+		"AverageAge": 82.13170732
+	},
+	{
+		"CountryName": "France",
+		"CountryCode": "FR",
+		"AverageAge": 82.17560976
+	},
+	{
+		"CountryName": "French Guiana",
+		"CountryCode": "GF",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "French Polynesia",
+		"CountryCode": "PF",
+		"AverageAge": 77.836
+	},
+	{
+		"CountryName": "French Southern Territories",
+		"CountryCode": "TF",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Gabon",
+		"CountryCode": "GA",
+		"AverageAge": 66.69
+	},
+	{
+		"CountryName": "Gambia",
+		"CountryCode": "GM",
+		"AverageAge": 62.383
+	},
+	{
+		"CountryName": "Georgia",
+		"CountryCode": "GE",
+		"AverageAge": 73.919
+	},
+	{
+		"CountryName": "Germany",
+		"CountryCode": "DE",
+		"AverageAge": 80.94146341
+	},
+	{
+		"CountryName": "Ghana",
+		"CountryCode": "GH",
+		"AverageAge": 64.347
+	},
+	{
+		"CountryName": "Gibraltar",
+		"CountryCode": "GI",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Greece",
+		"CountryCode": "GR",
+		"AverageAge": 81.08780488
+	},
+	{
+		"CountryName": "Greenland",
+		"CountryCode": "GL",
+		"AverageAge": 71.40463415
+	},
+	{
+		"CountryName": "Grenada",
+		"CountryCode": "GD",
+		"AverageAge": 72.426
+	},
+	{
+		"CountryName": "Guadeloupe",
+		"CountryCode": "GP",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Guam",
+		"CountryCode": "GU",
+		"AverageAge": 80.277
+	},
+	{
+		"CountryName": "Guatemala",
+		"CountryCode": "GT",
+		"AverageAge": 74.529
+	},
+	{
+		"CountryName": "Guernsey",
+		"CountryCode": "GG",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Guinea",
+		"CountryCode": "GN",
+		"AverageAge": 61.962
+	},
+	{
+		"CountryName": "Guinea-Bissau",
+		"CountryCode": "GW",
+		"AverageAge": 58.634
+	},
+	{
+		"CountryName": "Guyana",
+		"CountryCode": "GY",
+		"AverageAge": 70.023
+	},
+	{
+		"CountryName": "Haiti",
+		"CountryCode": "HT",
+		"AverageAge": 64.315
+	},
+	{
+		"CountryName": "Heard Island and McDonald Islands",
+		"CountryCode": "HM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Holy See",
+		"CountryCode": "VA",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Honduras",
+		"CountryCode": "HN",
+		"AverageAge": 75.448
+	},
+	{
+		"CountryName": "Hong Kong",
+		"CountryCode": "HK",
+		"AverageAge": 85.38780488
+	},
+	{
+		"CountryName": "Hungary",
+		"CountryCode": "HU",
+		"AverageAge": 75.61707317
+	},
+	{
+		"CountryName": "Iceland",
+		"CountryCode": "IS",
+		"AverageAge": 83.06585366
+	},
+	{
+		"CountryName": "India",
+		"CountryCode": "IN",
+		"AverageAge": 69.887
+	},
+	{
+		"CountryName": "Indonesia",
+		"CountryCode": "ID",
+		"AverageAge": 71.908
+	},
+	{
+		"CountryName": "Iran (Islamic Republic of)",
+		"CountryCode": "IR",
+		"AverageAge": 76.87
+	},
+	{
+		"CountryName": "Iraq",
+		"CountryCode": "IQ",
+		"AverageAge": 70.748
+	},
+	{
+		"CountryName": "Ireland",
+		"CountryCode": "IE",
+		"AverageAge": 82.20487805
+	},
+	{
+		"CountryName": "Isle of Man",
+		"CountryCode": "IM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Israel",
+		"CountryCode": "IL",
+		"AverageAge": 82.7
+	},
+	{
+		"CountryName": "Italy",
+		"CountryCode": "IT",
+		"AverageAge": 82.34390244
+	},
+	{
+		"CountryName": "Jamaica",
+		"CountryCode": "JM",
+		"AverageAge": 74.586
+	},
+	{
+		"CountryName": "Japan",
+		"CountryCode": "JP",
+		"AverageAge": 84.61560976
+	},
+	{
+		"CountryName": "Jersey",
+		"CountryCode": "JE",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Jordan",
+		"CountryCode": "JO",
+		"AverageAge": 74.655
+	},
+	{
+		"CountryName": "Kazakhstan",
+		"CountryCode": "KZ",
+		"AverageAge": 71.37
+	},
+	{
+		"CountryName": "Kenya",
+		"CountryCode": "KE",
+		"AverageAge": 66.991
+	},
+	{
+		"CountryName": "Kiribati",
+		"CountryCode": "KI",
+		"AverageAge": 68.611
+	},
+	{
+		"CountryName": "Korea (Democratic People's Republic of)",
+		"CountryCode": "KP",
+		"AverageAge": 72.453
+	},
+	{
+		"CountryName": "Korea (Republic of)",
+		"CountryCode": "KR",
+		"AverageAge": 83.42682927
+	},
+	{
+		"CountryName": "Kuwait",
+		"CountryCode": "KW",
+		"AverageAge": 75.586
+	},
+	{
+		"CountryName": "Kyrgyzstan",
+		"CountryCode": "KG",
+		"AverageAge": 71.8
+	},
+	{
+		"CountryName": "Lao People's Democratic Republic",
+		"CountryCode": "LA",
+		"AverageAge": 68.219
+	},
+	{
+		"CountryName": "Latvia",
+		"CountryCode": "LV",
+		"AverageAge": 75.38780488
+	},
+	{
+		"CountryName": "Lebanon",
+		"CountryCode": "LB",
+		"AverageAge": 79.004
+	},
+	{
+		"CountryName": "Lesotho",
+		"CountryCode": "LS",
+		"AverageAge": 54.836
+	},
+	{
+		"CountryName": "Liberia",
+		"CountryCode": "LR",
+		"AverageAge": 64.423
+	},
+	{
+		"CountryName": "Libya",
+		"CountryCode": "LY",
+		"AverageAge": 73.082
+	},
+	{
+		"CountryName": "Liechtenstein",
+		"CountryCode": "LI",
+		"AverageAge": 81.80731707
+	},
+	{
+		"CountryName": "Lithuania",
+		"CountryCode": "LT",
+		"AverageAge": 74.92926829
+	},
+	{
+		"CountryName": "Luxembourg",
+		"CountryCode": "LU",
+		"AverageAge": 81.74146341
+	},
+	{
+		"CountryName": "Macao",
+		"CountryCode": "MO",
+		"AverageAge": 84.37
+	},
+	{
+		"CountryName": "Macedonia (the former Yugoslav Republic of)",
+		"CountryCode": "MK",
+		"AverageAge": 75.69317073
+	},
+	{
+		"CountryName": "Madagascar",
+		"CountryCode": "MG",
+		"AverageAge": 67.39
+	},
+	{
+		"CountryName": "Malawi",
+		"CountryCode": "MW",
+		"AverageAge": 64.694
+	},
+	{
+		"CountryName": "Malaysia",
+		"CountryCode": "MY",
+		"AverageAge": 76.306
+	},
+	{
+		"CountryName": "Maldives",
+		"CountryCode": "MV",
+		"AverageAge": 79.208
+	},
+	{
+		"CountryName": "Mali",
+		"CountryCode": "ML",
+		"AverageAge": 59.692
+	},
+	{
+		"CountryName": "Malta",
+		"CountryCode": "MT",
+		"AverageAge": 82.65365854
+	},
+	{
+		"CountryName": "Marshall Islands",
+		"CountryCode": "MH",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Martinique",
+		"CountryCode": "MQ",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Mauritania",
+		"CountryCode": "MR",
+		"AverageAge": 65.129
+	},
+	{
+		"CountryName": "Mauritius",
+		"CountryCode": "MU",
+		"AverageAge": 74.17707317
+	},
+	{
+		"CountryName": "Mayotte",
+		"CountryCode": "YT",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Mexico",
+		"CountryCode": "MX",
+		"AverageAge": 75.131
+	},
+	{
+		"CountryName": "Micronesia (Federated States of)",
+		"CountryCode": "FM",
+		"AverageAge": 68.002
+	},
+	{
+		"CountryName": "Moldova (Republic of)",
+		"CountryCode": "MD",
+		"AverageAge": 72.006
+	},
+	{
+		"CountryName": "Monaco",
+		"CountryCode": "MC",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Mongolia",
+		"CountryCode": "MN",
+		"AverageAge": 70.056
+	},
+	{
+		"CountryName": "Montenegro",
+		"CountryCode": "ME",
+		"AverageAge": 75.93170732
+	},
+	{
+		"CountryName": "Montserrat",
+		"CountryCode": "MS",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Morocco",
+		"CountryCode": "MA",
+		"AverageAge": 76.901
+	},
+	{
+		"CountryName": "Mozambique",
+		"CountryCode": "MZ",
+		"AverageAge": 61.387
+	},
+	{
+		"CountryName": "Myanmar",
+		"CountryCode": "MM",
+		"AverageAge": 67.363
+	},
+	{
+		"CountryName": "Namibia",
+		"CountryCode": "NA",
+		"AverageAge": 64.045
+	},
+	{
+		"CountryName": "Nauru",
+		"CountryCode": "NR",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Nepal",
+		"CountryCode": "NP",
+		"AverageAge": 71.067
+	},
+	{
+		"CountryName": "Netherlands",
+		"CountryCode": "NL",
+		"AverageAge": 81.4097561
+	},
+	{
+		"CountryName": "New Caledonia",
+		"CountryCode": "NC",
+		"AverageAge": 77.77117073
+	},
+	{
+		"CountryName": "New Zealand",
+		"CountryCode": "NZ",
+		"AverageAge": 82.05609756
+	},
+	{
+		"CountryName": "Nicaragua",
+		"CountryCode": "NI",
+		"AverageAge": 74.697
+	},
+	{
+		"CountryName": "Niger",
+		"CountryCode": "NE",
+		"AverageAge": 62.792
+	},
+	{
+		"CountryName": "Nigeria",
+		"CountryCode": "NG",
+		"AverageAge": 55.018
+	},
+	{
+		"CountryName": "Niue",
+		"CountryCode": "NU",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Norfolk Island",
+		"CountryCode": "NF",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Northern Mariana Islands",
+		"CountryCode": "MP",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Norway",
+		"CountryCode": "NO",
+		"AverageAge": 83.2097561
+	},
+	{
+		"CountryName": "Oman",
+		"CountryCode": "OM",
+		"AverageAge": 78.078
+	},
+	{
+		"CountryName": "Pakistan",
+		"CountryCode": "PK",
+		"AverageAge": 67.428
+	},
+	{
+		"CountryName": "Palau",
+		"CountryCode": "PW",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Palestine, State of",
+		"CountryCode": "PS",
+		"AverageAge": 74.213
+	},
+	{
+		"CountryName": "Panama",
+		"CountryCode": "PA",
+		"AverageAge": 78.68
+	},
+	{
+		"CountryName": "Papua New Guinea",
+		"CountryCode": "PG",
+		"AverageAge": 64.725
+	},
+	{
+		"CountryName": "Paraguay",
+		"CountryCode": "PY",
+		"AverageAge": 74.363
+	},
+	{
+		"CountryName": "Peru",
+		"CountryCode": "PE",
+		"AverageAge": 76.947
+	},
+	{
+		"CountryName": "Philippines",
+		"CountryCode": "PH",
+		"AverageAge": 71.36
+	},
+	{
+		"CountryName": "Pitcairn",
+		"CountryCode": "PN",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Poland",
+		"CountryCode": "PL",
+		"AverageAge": 76.6
+	},
+	{
+		"CountryName": "Portugal",
+		"CountryCode": "PT",
+		"AverageAge": 80.97560976
+	},
+	{
+		"CountryName": "Puerto Rico",
+		"CountryCode": "PR",
+		"AverageAge": 80.08746341
+	},
+	{
+		"CountryName": "Qatar",
+		"CountryCode": "QA",
+		"AverageAge": 80.363
+	},
+	{
+		"CountryName": "Réunion",
+		"CountryCode": "RE",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Romania",
+		"CountryCode": "RO",
+		"AverageAge": 74.35365854
+	},
+	{
+		"CountryName": "Russian Federation",
+		"CountryCode": "RU",
+		"AverageAge": 71.33878049
+	},
+	{
+		"CountryName": "Rwanda",
+		"CountryCode": "RW",
+		"AverageAge": 69.329
+	},
+	{
+		"CountryName": "Saint Barthélemy",
+		"CountryCode": "BL",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Saint Helena, Ascension and Tristan da Cunha",
+		"CountryCode": "SH",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Saint Kitts and Nevis",
+		"CountryCode": "KN",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Saint Lucia",
+		"CountryCode": "LC",
+		"AverageAge": 76.343
+	},
+	{
+		"CountryName": "Saint Martin (French part)",
+		"CountryCode": "MF",
+		"AverageAge": 80.12195122
+	},
+	{
+		"CountryName": "Saint Pierre and Miquelon",
+		"CountryCode": "PM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Saint Vincent and the Grenadines",
+		"CountryCode": "VC",
+		"AverageAge": 72.658
+	},
+	{
+		"CountryName": "Samoa",
+		"CountryCode": "WS",
+		"AverageAge": 73.45
+	},
+	{
+		"CountryName": "San Marino",
+		"CountryCode": "SM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Sao Tome and Principe",
+		"CountryCode": "ST",
+		"AverageAge": 70.583
+	},
+	{
+		"CountryName": "Saudi Arabia",
+		"CountryCode": "SA",
+		"AverageAge": 75.28
+	},
+	{
+		"CountryName": "Senegal",
+		"CountryCode": "SN",
+		"AverageAge": 68.213
+	},
+	{
+		"CountryName": "Serbia",
+		"CountryCode": "RS",
+		"AverageAge": 74.22926829
+	},
+	{
+		"CountryName": "Seychelles",
+		"CountryCode": "SC",
+		"AverageAge": 77.23658537
+	},
+	{
+		"CountryName": "Sierra Leone",
+		"CountryCode": "SL",
+		"AverageAge": 55.066
+	},
+	{
+		"CountryName": "Singapore",
+		"CountryCode": "SG",
+		"AverageAge": 83.74390244
+	},
+	{
+		"CountryName": "Sint Maarten (Dutch part)",
+		"CountryCode": "SX",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Slovakia",
+		"CountryCode": "SK",
+		"AverageAge": 76.86585366
+	},
+	{
+		"CountryName": "Slovenia",
+		"CountryCode": "SI",
+		"AverageAge": 80.53170732
+	},
+	{
+		"CountryName": "Solomon Islands",
+		"CountryCode": "SB",
+		"AverageAge": 73.132
+	},
+	{
+		"CountryName": "Somalia",
+		"CountryCode": "SO",
+		"AverageAge": 57.697
+	},
+	{
+		"CountryName": "South Africa",
+		"CountryCode": "ZA",
+		"AverageAge": 64.379
+	},
+	{
+		"CountryName": "South Georgia and the South Sandwich Islands",
+		"CountryCode": "GS",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "South Sudan",
+		"CountryCode": "SS",
+		"AverageAge": 58.095
+	},
+	{
+		"CountryName": "Spain",
+		"CountryCode": "ES",
+		"AverageAge": 82.33414634
+	},
+	{
+		"CountryName": "Sri Lanka",
+		"CountryCode": "LK",
+		"AverageAge": 77.144
+	},
+	{
+		"CountryName": "Sudan",
+		"CountryCode": "SD",
+		"AverageAge": 65.53
+	},
+	{
+		"CountryName": "Suriname",
+		"CountryCode": "SR",
+		"AverageAge": 71.802
+	},
+	{
+		"CountryName": "Svalbard and Jan Mayen",
+		"CountryCode": "SJ",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Sweden",
+		"CountryCode": "SE",
+		"AverageAge": 82.40731707
+	},
+	{
+		"CountryName": "Switzerland",
+		"CountryCode": "CH",
+		"AverageAge": 83.1
+	},
+	{
+		"CountryName": "Syrian Arab Republic",
+		"CountryCode": "SY",
+		"AverageAge": 73.651
+	},
+	{
+		"CountryName": "Taiwan, Province of China",
+		"CountryCode": "TW",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Tajikistan",
+		"CountryCode": "TJ",
+		"AverageAge": 71.301
+	},
+	{
+		"CountryName": "Tanzania, United Republic of",
+		"CountryCode": "TZ",
+		"AverageAge": 65.815
+	},
+	{
+		"CountryName": "Thailand",
+		"CountryCode": "TH",
+		"AverageAge": 77.344
+	},
+	{
+		"CountryName": "Timor-Leste",
+		"CountryCode": "TL",
+		"AverageAge": 69.712
+	},
+	{
+		"CountryName": "Togo",
+		"CountryCode": "TG",
+		"AverageAge": 61.34
+	},
+	{
+		"CountryName": "Tokelau",
+		"CountryCode": "TK",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Tonga",
+		"CountryCode": "TO",
+		"AverageAge": 71.018
+	},
+	{
+		"CountryName": "Trinidad and Tobago",
+		"CountryCode": "TT",
+		"AverageAge": 73.628
+	},
+	{
+		"CountryName": "Tunisia",
+		"CountryCode": "TN",
+		"AverageAge": 76.891
+	},
+	{
+		"CountryName": "Turkey",
+		"CountryCode": "TR",
+		"AverageAge": 77.928
+	},
+	{
+		"CountryName": "Turkmenistan",
+		"CountryCode": "TM",
+		"AverageAge": 68.313
+	},
+	{
+		"CountryName": "Turks and Caicos Islands",
+		"CountryCode": "TC",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Tuvalu",
+		"CountryCode": "TV",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Uganda",
+		"CountryCode": "UG",
+		"AverageAge": 63.713
+	},
+	{
+		"CountryName": "Ukraine",
+		"CountryCode": "UA",
+		"AverageAge": 71.18512195
+	},
+	{
+		"CountryName": "United Arab Emirates",
+		"CountryCode": "AE",
+		"AverageAge": 78.12
+	},
+	{
+		"CountryName": "United Kingdom of Great Britain and Northern Ireland",
+		"CountryCode": "GB",
+		"AverageAge": 80.90243902
+	},
+	{
+		"CountryName": "United States of America",
+		"CountryCode": "US",
+		"AverageAge": 77.2804878
+	},
+	{
+		"CountryName": "United States Minor Outlying Islands",
+		"CountryCode": "UM",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Uruguay",
+		"CountryCode": "UY",
+		"AverageAge": 78.056
+	},
+	{
+		"CountryName": "Uzbekistan",
+		"CountryCode": "UZ",
+		"AverageAge": 71.848
+	},
+	{
+		"CountryName": "Vanuatu",
+		"CountryCode": "VU",
+		"AverageAge": 70.623
+	},
+	{
+		"CountryName": "Venezuela (Bolivarian Republic of)",
+		"CountryCode": "VE",
+		"AverageAge": 72.066
+	},
+	{
+		"CountryName": "Viet Nam",
+		"CountryCode": "VN",
+		"AverageAge": 75.493
+	},
+	{
+		"CountryName": "Virgin Islands (British)",
+		"CountryCode": "VG",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Virgin Islands (U.S.)",
+		"CountryCode": "VI",
+		"AverageAge": 79.8195122
+	},
+	{
+		"CountryName": "Wallis and Futuna",
+		"CountryCode": "WF",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Western Sahara",
+		"CountryCode": "EH",
+		"AverageAge": null
+	},
+	{
+		"CountryName": "Yemen",
+		"CountryCode": "YE",
+		"AverageAge": 66.181
+	},
+	{
+		"CountryName": "Zambia",
+		"CountryCode": "ZM",
+		"AverageAge": 64.194
+	},
+	{
+		"CountryName": "Zimbabwe",
+		"CountryCode": "ZW",
+		"AverageAge": 61.738
+	}
+]

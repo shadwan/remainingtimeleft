@@ -1,5 +1,6 @@
 <script>
 	import { clickOutside } from '$lib/scripts/click_outside.js';
+
 	let showDropDown = false;
 
 	export let selectedValue;

@@ -21,7 +21,6 @@
 	let selected_day = date.getDate();
 	let selected_month = date.getMonth();
 	let selected_year = date.getFullYear();
-	console.log(date);
 
 	let years = [];
 
