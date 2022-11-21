@@ -1,39 +1,64 @@
 <script>
+	import { onMount } from 'svelte';
+
 	import CountrySelector from '$lib/components/CountrySelector/index.svelte';
 	import CountryData from '$lib/data/countrydata.json';
+
+	let svg;
 	let ccode = 'bd';
-	$: selectedcountrycolor = '[cc=' + ccode + ']';
+	let doc;
+	// let updateMapColor;
 
-	let countries = [];
+	// 	doc = document.getElementById('world');
 
-	for (let i = 0; i < CountryData.length; i++) {
-		countries.push(CountryData[i].CountryName);
+	// 	updateMapColor = function (selectedcountrycolor) {
+	//
+	// onMount(() => {
+	// 	doc = document.getElementById('world');
+	// });
+
+	$: selectedcountrycolor = '[cc=' + ccode.toLocaleLowerCase() + ']';
+
+	$: {
+		updateSVG(selectedcountrycolor);
 	}
 
-	function t() {
-		let doc = document.getElementById('world');
-
-		// Colour Canada red
-
-		// Alert the ISO3166 code of clicked countries
-		doc.addEventListener('click', function (e) {
-			let target = e.target,
-				cc = target.getAttribute('cc') || target.parentElement.getAttribute('cc');
-			if (cc) {
-				ccode = cc;
+	function updateSVG(selectedcountrycolor) {
+		if (doc) {
+			console.log(doc);
+			console.log(selectedcountrycolor);
+			let selection = doc.querySelector(selectedcountrycolor) !== null;
+			if (selection) {
 				doc.querySelector(selectedcountrycolor).style.fill = 'red';
-				console.log('My country code is ' + cc);
 			}
-		});
+		}
+		// doc.querySelector(selectedcountrycolor).style.fill = 'red';
+		console.log(doc);
 	}
+
+	// function t() {
+	// 	// Colour Canada red
+
+	// 	// Alert the ISO3166 code of clicked countries
+	// 	doc.addEventListener('click', function (e) {
+	// 		let target = e.target,
+	// 			cc = target.getAttribute('cc') || target.parentElement.getAttribute('cc');
+	// 		if (cc) {
+	// 			ccode = cc;
+
+	// 			console.log('My country code is ' + cc);
+	// 		}
+	// 	});
+	// }
 </script>
 
 <div>
-	<h1 class="">{selectedcountrycolor}</h1>
-	<CountrySelector values={countries} />
+	<h1 class="">{ccode}</h1>
+
+	<CountrySelector values={CountryData} bind:selectedValue={ccode} />
 	<div>
 		<svg
-			on:click={t()}
+			bind:this={doc}
 			id="world"
 			version="1.2"
 			baseProfile="tiny"

@@ -31,7 +31,7 @@
 		aria-expanded="true"
 		aria-labelledby="listbox-label"
 	>
-		<span class="block truncate">{values[selectedValue]}</span>
+		<span class="block truncate">{selectedValue}</span>
 		<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
 			<!-- Heroicon name: mini/chevron-up-down -->
 			<svg
@@ -75,20 +75,20 @@
         -->
 			{#each values as value, i}
 				<li
-					on:click={() => updateDate(i)}
+					on:click={() => updateDate(value.CountryCode)}
 					class="group text-gray-900  relative cursor-default select-none py-2 pl-8 pr-4 hover:text-white hover:bg-indigo-600"
 					id="listbox-option-0"
 					role="option"
 				>
 					<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-					<span class="font-normal block truncate">{value}</span>
+					<span class="font-normal block truncate">{value.CountryName}</span>
 
 					<!--
             Checkmark, only display for selected option.
   
             Highlighted: "text-white", Not Highlighted: "text-indigo-600"
           -->
-					{#if selectedValue == i}
+					{#if selectedValue == value.CountryCode}
 						<span
 							class=" text-indigo-600 absolute inset-y-0 left-0 flex items-center pl-1.5 hover:text-white "
 						>
