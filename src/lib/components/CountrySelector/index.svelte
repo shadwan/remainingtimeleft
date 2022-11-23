@@ -25,18 +25,10 @@
 	}}
 	class="w-max relative mt-1"
 >
-	<input
-		id="combobox"
-		type="text"
-		class="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-12 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
-		role="combobox"
-		aria-controls="options"
-		aria-expanded="false"
-	/>
 	<button
 		on:click={() => (showDropDown = !showDropDown)}
 		type="button"
-		class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none"
+		class="relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
 		aria-haspopup="listbox"
 		aria-expanded="true"
 		aria-labelledby="listbox-label"
@@ -86,41 +78,44 @@
           Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
         -->
 			{#each values as value, i}
-				<li
-					on:click={() => updateCountry(value.CountryCode, value.CountryName)}
-					class="group text-gray-900  relative cursor-default select-none py-2 pl-8 pr-4 hover:text-white hover:bg-indigo-600"
-					id="listbox-option-0"
-					role="option"
-				>
-					<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-					<span class="font-normal block truncate">{value.CountryName}</span>
+				{#if value.AverageAge != null}
+					<li
+						on:click={() => updateCountry(value.CountryCode, value.CountryName)}
+						class="{value.AverageAge == null
+							? 'hover:cursor-not-allowed '
+							: ' '}group text-gray-900  relative cursor-default select-none py-2 pl-8 pr-4 hover:text-white hover:bg-indigo-600"
+						id="listbox-option-0"
+						role="option"
+					>
+						<!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+						<span class="font-normal block truncate">{value.CountryName}</span>
 
-					<!--
+						<!--
             Checkmark, only display for selected option.
   
             Highlighted: "text-white", Not Highlighted: "text-indigo-600"
           -->
-					{#if selectedValue[1] == value.CountryCode}
-						<span
-							class=" text-indigo-600 absolute inset-y-0 left-0 flex items-center pl-1.5 hover:text-white "
-						>
-							<!-- Heroicon name: mini/check -->
-							<svg
-								class="h-5 w-5 fill-indigo-600 group-hover:fill-white"
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 20 20"
-								aria-hidden="true"
+						{#if selectedValue[1] == value.CountryCode}
+							<span
+								class=" text-indigo-600 absolute inset-y-0 left-0 flex items-center pl-1.5 hover:text-white "
 							>
-								<path
-									fill-rule="evenodd"
-									d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-									clip-rule="evenodd"
-								/>
-							</svg>
-						</span>
-					{/if}
-				</li>
-
+								<!-- Heroicon name: mini/check -->
+								<svg
+									class="h-5 w-5 fill-indigo-600 group-hover:fill-white"
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									aria-hidden="true"
+								>
+									<path
+										fill-rule="evenodd"
+										d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+										clip-rule="evenodd"
+									/>
+								</svg>
+							</span>
+						{/if}
+					</li>
+				{/if}
 				<!-- More items... -->
 			{/each}
 		</ul>
