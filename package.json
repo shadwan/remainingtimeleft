@@ -14,6 +14,7 @@
 		"@playwright/test": "1.25.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"@tailwindcss/forms": "^0.5.3",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.16.0",
 		"eslint-config-prettier": "^8.3.0",
@@ -28,6 +29,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"calendarize": "^1.1.1"
+		"calendarize": "^1.1.1",
+		"country-data": "^0.0.31",
+		"panzoom": "^9.4.3",
+		"svg-pan-zoom": "^3.6.1",
+		"svg-pan-zoom-container": "^0.2.7"
 	}
 }

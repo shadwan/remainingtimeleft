@@ -3,14 +3,16 @@
 
 	let showDropDown = false;
 
-	export let selectedValue;
+	export let selectedValue = [null, null];
 	let highlight = { highlightstatus: false, value: selectedValue };
 	export let values = [];
 	export let update = () => {};
+	let selectedname;
 
-	function updateDate(i) {
-		selectedValue = i;
-		update();
+	function updateCountry(i, name) {
+		selectedValue[0] = selectedValue[1];
+		selectedValue[1] = i;
+		selectedname = name;
 	}
 </script>
 
@@ -23,15 +25,25 @@
 	}}
 	class="w-max relative mt-1"
 >
+	<input
+		id="combobox"
+		type="text"
+		class="w-full rounded-md border border-gray-300 bg-white py-2 pl-3 pr-12 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+		role="combobox"
+		aria-controls="options"
+		aria-expanded="false"
+	/>
 	<button
 		on:click={() => (showDropDown = !showDropDown)}
 		type="button"
-		class="relative w-full cursor-default rounded-md border border-gray-300 bg-white py-2 pl-3 pr-10 text-left shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 sm:text-sm"
+		class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none"
 		aria-haspopup="listbox"
 		aria-expanded="true"
 		aria-labelledby="listbox-label"
 	>
-		<span class="block truncate">{selectedValue}</span>
+		<span class="block truncate"
+			>{selectedValue[1] != null ? selectedname : 'Select your country'}</span
+		>
 		<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
 			<!-- Heroicon name: mini/chevron-up-down -->
 			<svg
@@ -75,7 +87,7 @@
         -->
 			{#each values as value, i}
 				<li
-					on:click={() => updateDate(value.CountryCode)}
+					on:click={() => updateCountry(value.CountryCode, value.CountryName)}
 					class="group text-gray-900  relative cursor-default select-none py-2 pl-8 pr-4 hover:text-white hover:bg-indigo-600"
 					id="listbox-option-0"
 					role="option"
@@ -88,7 +100,7 @@
   
             Highlighted: "text-white", Not Highlighted: "text-indigo-600"
           -->
-					{#if selectedValue == value.CountryCode}
+					{#if selectedValue[1] == value.CountryCode}
 						<span
 							class=" text-indigo-600 absolute inset-y-0 left-0 flex items-center pl-1.5 hover:text-white "
 						>

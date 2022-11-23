@@ -1,6 +1,8 @@
 <script>
+	export const ssr = false;
 	import Calendar from '$lib/components/Calendar/index.svelte';
 	import WorldMap from '$lib/components/WorldMap/index.svelte';
+	import CountryList from '$lib/components/CountryList/index.svelte';
 </script>
 
 <div class="flex items-center justify-center h-screen">

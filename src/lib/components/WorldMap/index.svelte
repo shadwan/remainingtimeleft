@@ -1,61 +1,68 @@
 <script>
+	export const ssr = false;
 	import { onMount } from 'svelte';
-
 	import CountrySelector from '$lib/components/CountrySelector/index.svelte';
 	import CountryData from '$lib/data/countrydata.json';
 
-	let svg;
-	let ccode = 'bd';
+	let countryarray = [null, null];
+	$: ccode = countryarray[1]?.toLocaleLowerCase();
+	$: prev_ccode = countryarray[0]?.toLocaleLowerCase();
 	let doc;
-	// let updateMapColor;
 
-	// 	doc = document.getElementById('world');
-
-	// 	updateMapColor = function (selectedcountrycolor) {
-	//
-	// onMount(() => {
-	// 	doc = document.getElementById('world');
-	// });
-
-	$: selectedcountrycolor = '[cc=' + ccode.toLocaleLowerCase() + ']';
+	$: prev_selectedcountrycolor = '[cc=' + prev_ccode + ']';
+	$: selectedcountrycolor = '[cc=' + ccode + ']';
 
 	$: {
 		updateSVG(selectedcountrycolor);
 	}
+	onMount(async () => {});
+
+	// Zooming
+
+	let x = 0;
+	$: i_x = x;
+	let y = 0;
+	$: i_y = y;
+	let w = 940;
+	$: i_w = w;
+	let h = 530;
+	$: i_h = h;
+	$: vvalue = i_x + ',' + i_y + ',' + i_w + ',' + i_h;
 
 	function updateSVG(selectedcountrycolor) {
 		if (doc) {
-			console.log(doc);
-			console.log(selectedcountrycolor);
+			console.log('dom' + doc);
+			console.log('selectedcountrycolor');
+
 			let selection = doc.querySelector(selectedcountrycolor) !== null;
+			let prev_selection = doc.querySelector(prev_selectedcountrycolor) !== null;
+			console.log(selection, prev_selection);
 			if (selection) {
-				doc.querySelector(selectedcountrycolor).style.fill = 'red';
+				if (prev_selection) {
+					doc.querySelector(prev_selectedcountrycolor).style.fill = 'white';
+				}
+				// let selectedcountry = doc.querySelector(selectedcountrycolor);
+				// let zoomedcc = selectedcountry.getBBox();
+				// x = zoomedcc.x * 0.5;
+				// y = zoomedcc.y * 0.5;
+
+				// w = zoomedcc.width + (490 - zoomedcc.width);
+				// h = zoomedcc.height + (275 - zoomedcc.height);
+				// doc.querySelector(selectedcountrycolor).style.transform = 'rotate(75deg)';
+				// console.log(selectedcountry);
+
+				doc.querySelector(selectedcountrycolor).style.fill = '#4546E5';
 			}
 		}
-		// doc.querySelector(selectedcountrycolor).style.fill = 'red';
+
 		console.log(doc);
 	}
-
-	// function t() {
-	// 	// Colour Canada red
-
-	// 	// Alert the ISO3166 code of clicked countries
-	// 	doc.addEventListener('click', function (e) {
-	// 		let target = e.target,
-	// 			cc = target.getAttribute('cc') || target.parentElement.getAttribute('cc');
-	// 		if (cc) {
-	// 			ccode = cc;
-
-	// 			console.log('My country code is ' + cc);
-	// 		}
-	// 	});
-	// }
 </script>
 
 <div>
-	<h1 class="">{ccode}</h1>
+	<h1 class="">{countryarray} {ccode} {prev_ccode}</h1>
 
-	<CountrySelector values={CountryData} bind:selectedValue={ccode} />
+	<CountrySelector values={CountryData} bind:selectedValue={countryarray} />
 	<div>
 		<svg
 			bind:this={doc}
@@ -65,12 +72,12 @@
 			xmlns:svg="http://www.w3.org/2000/svg"
 			xmlns="http://www.w3.org/2000/svg"
 			xmlns:xlink="http://www.w3.org/1999/xlink"
-			x="0px"
-			y="0px"
-			width="100%"
+			x="0"
+			y="0"
+			width="490px"
 			height="100%"
-			viewBox="9 3 940 530"
-			xml:space="preserve"
+			viewBox={vvalue}
+			preserveAspectRatio="xMinYMin slice"
 		>
 			<style type="text/css">
 				#bg {
@@ -83,7 +90,7 @@
 				}
 			</style>
 			<!-- Adapted from http://en.wikipedia.org/wiki/File:World_map_-_low_resolution.svg -->
-			<rect id="bg" x="9" y="3" width="100%" height="100%" />
+			<rect id="bg" width="100%" height="100%" />
 			<g cc="tr">
 				<path
 					d="M558.7,209.19l-2.23,2.36l-8.2-0.24l-4.92-2.95l-4.8-0.12l-5.51,3.9l-5.16,0.24l-0.47,2.95h-5.86l-2.34,2.13v1.18l1.41,1.18v1.3l-0.59,1.54l0.59,1.3l1.88-0.94l1.88,2.01l-0.47,1.42l-0.7,0.95l1.05,1.18l5.16,1.06l3.63-1.54v-2.24l1.76,0.35l4.22,2.48l4.57-0.71l1.99-1.89l1.29,0.47v2.13h1.76l1.52-2.95l13.36-1.42l5.83-0.71l-1.54-2.02l-0.03-2.73l1.17-1.4l-4.26-3.42l0.23-2.95h-2.34L558.7,209.19L558.7,209.19z"
