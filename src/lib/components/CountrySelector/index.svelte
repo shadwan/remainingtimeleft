@@ -55,8 +55,14 @@
 			class="block w-full rounded-md border-gray-300 pr-12 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
 			bind:value={searchkeyword}
 			on:input={search(searchkeyword)}
+			on:blur={() => {
+				if (filteredValue.length === 0) {
+					searching = false;
+				}
+			}}
 		/>
 	</div>
+
 	<div class="p-5 w-96 h-full overflow-y-auto">
 		<div class="relative">
 			<ul role="list" class="relative z-0 divide-y divide-gray-200  ">
