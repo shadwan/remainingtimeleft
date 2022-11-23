@@ -41,15 +41,15 @@
 				if (prev_selection) {
 					doc.querySelector(prev_selectedcountrycolor).style.fill = 'white';
 				}
-				// let selectedcountry = doc.querySelector(selectedcountrycolor);
-				// let zoomedcc = selectedcountry.getBBox();
-				// x = zoomedcc.x * 0.5;
-				// y = zoomedcc.y * 0.5;
+				let selectedcountry = doc.querySelector(selectedcountrycolor);
+				let zoomedcc = selectedcountry.getBBox();
+				x = zoomedcc.x;
+				y = zoomedcc.y - zoomedcc.height * 0.25;
 
-				// w = zoomedcc.width + (490 - zoomedcc.width);
-				// h = zoomedcc.height + (275 - zoomedcc.height);
-				// doc.querySelector(selectedcountrycolor).style.transform = 'rotate(75deg)';
-				// console.log(selectedcountry);
+				w = zoomedcc.width;
+				h = zoomedcc.height + zoomedcc.height * 0.5;
+				doc.querySelector(selectedcountrycolor).style.transform = '';
+				console.log(selectedcountry);
 
 				doc.querySelector(selectedcountrycolor).style.fill = '#4546E5';
 			}
@@ -74,10 +74,9 @@
 			xmlns:xlink="http://www.w3.org/1999/xlink"
 			x="0"
 			y="0"
-			width="490px"
-			height="100%"
+			width="490"
+			height="276"
 			viewBox={vvalue}
-			preserveAspectRatio="xMinYMin slice"
 		>
 			<style type="text/css">
 				#bg {
