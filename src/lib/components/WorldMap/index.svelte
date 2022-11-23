@@ -60,16 +60,14 @@
 	}
 </script>
 
-<div class="flex flex-column">
-	<h1 class="">{countryarray} {ccode} {prev_ccode}</h1>
-
+<div class="flex flex-column h-full overflow-hidden">
 	<CountrySelector values={CountryData} bind:selectedValue={countryarray} />
 	<div>
 		<svg
 			bind:this={doc}
 			viewBox="0 0 1010 666"
-			width="505"
-			height="333"
+			width="500"
+			height="100%"
 			fill="#ffffff"
 			stroke="#000000"
 			stroke-width=".1"

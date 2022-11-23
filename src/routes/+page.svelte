@@ -9,7 +9,7 @@
 	<div class="min-w-fit w-1/3 bg-white shadow-xl p-10 tems-center justify-center">
 		<Calendar />
 	</div>
-	<div class="min-w-fit w-1/3 bg-white shadow-xl p-10 tems-center justify-center">
+	<div class="min-w-fit w-1/3 bg-white shadow-xl p-10 tems-center justify-center h-1/2  ">
 		<WorldMap />
 	</div>
 </div>
