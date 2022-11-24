@@ -8,9 +8,10 @@
 	$: ccode = countryarray[1];
 	$: prev_ccode = countryarray[0];
 	let doc;
+	export let averageAge = 90;
 
 	$: {
-		updateSVG(ccode);
+		updateSVG(ccode, prev_ccode);
 	}
 
 	// Zooming
@@ -31,17 +32,12 @@
 
 	function animate(vvalue) {
 		gsap.timeline({ defaults: { duration: 1 } }).to(doc, { attr: { viewBox: vvalue } });
-		console.log('sdsdsd');
 	}
 
-	function updateSVG(ccode) {
+	function updateSVG(ccode, prev_ccode) {
 		if (doc) {
-			console.log('dom' + doc);
-			console.log('selectedcountrycolor');
-
 			let selection = doc.getElementById(ccode) !== null;
 
-			console.log(selection);
 			if (selection) {
 				let selectedcountry = doc.getElementById(ccode);
 				let zoomedcc = selectedcountry.getBBox();
@@ -51,24 +47,26 @@
 				w = zoomedcc.width;
 				h = zoomedcc.height + zoomedcc.height * 2;
 
-				console.log(selectedcountry);
 				doc.getElementById(ccode).style.fill = '#4546E5';
+				if (prev_ccode !== null) {
+					doc.getElementById(prev_ccode).style.fill = '#FFFFFF';
+				}
 			}
 		}
-
-		console.log(doc);
 	}
 </script>
 
-<div class="flex flex-column h-full overflow-hidden">
-	<CountrySelector values={CountryData} bind:selectedValue={countryarray} />
+<div class="flex flex-col ">
+	<div>
+		<CountrySelector values={CountryData} bind:selectedValue={countryarray} bind:averageAge />
+	</div>
 	<div>
 		<svg
 			bind:this={doc}
 			viewBox="0 0 1010 666"
-			width="500"
-			height="100%"
-			fill="#ffffff"
+			width="350"
+			height="202"
+			fill="#e5e7eb"
 			stroke="#000000"
 			stroke-width=".1"
 		>

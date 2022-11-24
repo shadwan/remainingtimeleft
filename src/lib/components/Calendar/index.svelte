@@ -18,9 +18,9 @@
 		'Dec'
 	];
 
-	let selected_day = date.getDate();
-	let selected_month = date.getMonth();
-	let selected_year = date.getFullYear();
+	export let selected_day = date.getDate();
+	export let selected_month = date.getMonth();
+	export let selected_year = date.getFullYear();
 
 	let years = [];
 

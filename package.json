@@ -29,6 +29,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"age-calculator": "^1.0.0",
 		"calendarize": "^1.1.1",
 		"country-data": "^0.0.31",
 		"country-flag-icons": "^1.4.26",

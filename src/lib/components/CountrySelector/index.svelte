@@ -6,6 +6,8 @@
 	import getUnicodeFlagIcon from 'country-flag-icons/unicode';
 	import { countries } from 'country-flag-icons';
 
+	export let averageAge;
+
 	let searching = false;
 	let filteredValue = [];
 	let searchkeyword = null;
@@ -19,10 +21,12 @@
 	// 	search(searchkeyword);
 	// }
 
-	function updateCountry(i, name) {
+	function updateCountry(i, name, age) {
 		selectedValue[0] = selectedValue[1];
 		selectedValue[1] = i;
 		selectedname = name;
+		averageAge = parseInt(age);
+		console.log(age);
 	}
 
 	function search(searchkeyword) {
@@ -45,7 +49,7 @@
 	}
 </script>
 
-<div>
+<div class="w-full h-full ">
 	<div class=" m-5  flex items-center p-1">
 		<input
 			type="text"
@@ -63,68 +67,73 @@
 		/>
 	</div>
 
-	<div class="p-5 w-96 h-full overflow-y-auto">
-		<div class="relative">
-			<ul role="list" class="relative z-0 divide-y divide-gray-200  ">
-				<!--
+	<div class="max-h-[300px] p-5 overflow-y-auto">
+		<ul role="list" class="relative  divide-y divide-gray-200  ">
+			<!--
           Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
   
           Highlighted: "text-white bg-indigo-600", Not Highlighted: "text-gray-900"
         -->
-				{#if searching}
-					{#each filteredValue as value, i}
-						{#if value.item.AverageAge != null}
-							<li
-								on:click={updateCountry(value.item.CountryCode, value.item.CountryName)}
-								class="bg-white"
+			{#if searching}
+				{#each filteredValue as value, i}
+					{#if value.item.AverageAge != null}
+						<li
+							on:click={updateCountry(
+								value.item.CountryCode,
+								value.item.CountryName,
+								value.item.AverageAge
+							)}
+							class="bg-white"
+						>
+							<div
+								class="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 hover:bg-gray-50"
 							>
-								<div
-									class="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 hover:bg-gray-50"
-								>
-									<div class="flex-shrink-0 text-5xl">
-										{getUnicodeFlagIcon(value.item.CountryCode)}
-									</div>
+								<div class="flex-shrink-0 text-5xl">
+									{getUnicodeFlagIcon(value.item.CountryCode)}
+								</div>
 
-									<div class="min-w-0 flex-1">
-										<a href="#" class="focus:outline-none">
-											<!-- Extend touch target to entire panel -->
-											<span class="absolute inset-0" aria-hidden="true" />
-											<p class="text-sm font-medium text-gray-900">
-												{value.item.CountryName}
-											</p>
-											<p class="truncate text-sm text-gray-500">
-												Average Age: {parseInt(value.item.AverageAge)}
-											</p>
-										</a>
-									</div>
+								<div class="min-w-0 flex-1">
+									<a href="#" class="focus:outline-none">
+										<!-- Extend touch target to entire panel -->
+										<span class="absolute inset-0" aria-hidden="true" />
+										<p class="text-sm font-medium text-gray-900">
+											{value.item.CountryName}
+										</p>
+										<p class="truncate text-sm text-gray-500">
+											Average Age: {parseInt(value.item.AverageAge)}
+										</p>
+									</a>
 								</div>
-							</li>
-						{/if}
-					{/each}
-				{:else}
-					{#each values as value, i}
-						{#if value.AverageAge != null}
-							<li on:click={updateCountry(value.CountryCode, value.CountryName)} class="bg-white">
-								<div
-									class="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 hover:bg-gray-50"
-								>
-									<div class="flex-shrink-0 text-5xl">{getUnicodeFlagIcon(value.CountryCode)}</div>
-									<div class="min-w-0 flex-1">
-										<a href="#" class="focus:outline-none">
-											<!-- Extend touch target to entire panel -->
-											<span class="absolute inset-0" aria-hidden="true" />
-											<p class="text-sm font-medium text-gray-900">{value.CountryName}</p>
-											<p class="truncate text-sm text-gray-500">
-												Average Age: {parseInt(value.AverageAge)}
-											</p>
-										</a>
-									</div>
+							</div>
+						</li>
+					{/if}
+				{/each}
+			{:else}
+				{#each values as value, i}
+					{#if value.AverageAge != null}
+						<li
+							on:click={updateCountry(value.CountryCode, value.CountryName, value.AverageAge)}
+							class="bg-white"
+						>
+							<div
+								class="relative flex items-center space-x-3 px-6 py-5 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500 hover:bg-gray-50"
+							>
+								<div class="flex-shrink-0 text-5xl">{getUnicodeFlagIcon(value.CountryCode)}</div>
+								<div class="min-w-0 flex-1">
+									<a href="#" class="focus:outline-none">
+										<!-- Extend touch target to entire panel -->
+										<span class="absolute inset-0" aria-hidden="true" />
+										<p class="text-sm font-medium text-gray-900">{value.CountryName}</p>
+										<p class="truncate text-sm text-gray-500">
+											Average Age: {parseInt(value.AverageAge)}
+										</p>
+									</a>
 								</div>
-							</li>
-						{/if}
-					{/each}
-				{/if}
-			</ul>
-		</div>
+							</div>
+						</li>
+					{/if}
+				{/each}
+			{/if}
+		</ul>
 	</div>
 </div>
