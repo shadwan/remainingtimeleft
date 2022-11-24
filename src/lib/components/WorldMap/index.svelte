@@ -48,8 +48,8 @@
 				h = zoomedcc.height + zoomedcc.height * 2;
 
 				doc.getElementById(ccode).style.fill = '#4546E5';
-				if (prev_ccode !== null) {
-					doc.getElementById(prev_ccode).style.fill = '#FFFFFF';
+				if (prev_ccode !== null && prev_ccode !== ccode) {
+					doc.getElementById(prev_ccode).style.fill = '#e5e7eb';
 				}
 			}
 		}

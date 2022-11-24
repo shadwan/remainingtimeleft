@@ -92,17 +92,15 @@
 									{getUnicodeFlagIcon(value.item.CountryCode)}
 								</div>
 
-								<div class="min-w-0 flex-1">
-									<a href="#" class="focus:outline-none">
-										<!-- Extend touch target to entire panel -->
-										<span class="absolute inset-0" aria-hidden="true" />
-										<p class="text-sm font-medium text-gray-900">
-											{value.item.CountryName}
-										</p>
-										<p class="truncate text-sm text-gray-500">
-											Average Age: {parseInt(value.item.AverageAge)}
-										</p>
-									</a>
+								<div class="min-w-0 flex-1 ">
+									<!-- Extend touch target to entire panel -->
+									<span class="absolute inset-0" aria-hidden="true" />
+									<p class="text-sm font-medium text-gray-900">
+										{value.item.CountryName}
+									</p>
+									<p class="truncate text-sm text-gray-500">
+										Average Age: {parseInt(value.item.AverageAge)}
+									</p>
 								</div>
 							</div>
 						</li>
@@ -120,14 +118,12 @@
 							>
 								<div class="flex-shrink-0 text-5xl">{getUnicodeFlagIcon(value.CountryCode)}</div>
 								<div class="min-w-0 flex-1">
-									<a href="#" class="focus:outline-none">
-										<!-- Extend touch target to entire panel -->
-										<span class="absolute inset-0" aria-hidden="true" />
-										<p class="text-sm font-medium text-gray-900">{value.CountryName}</p>
-										<p class="truncate text-sm text-gray-500">
-											Average Age: {parseInt(value.AverageAge)}
-										</p>
-									</a>
+									<!-- Extend touch target to entire panel -->
+									<span class="absolute inset-0" aria-hidden="true" />
+									<p class="text-sm font-medium text-gray-900">{value.CountryName}</p>
+									<p class="truncate text-sm text-gray-500">
+										Average Age: {parseInt(value.AverageAge)}
+									</p>
 								</div>
 							</div>
 						</li>

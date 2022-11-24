@@ -17,12 +17,12 @@
 </script>
 
 <div class="flex flex-col md:flex-row  h-screen w-screen ">
-	<div class=" flex flex-col w-fit h-full min-w-[375px] md:w-1/3 md:h-screen">
-		<div class="space-y-4 p-10 tems-center justify-center">
+	<div class=" flex flex-col w-fit h-full min-w-[375px]  md:h-screen">
+		<div class="space-y-4  tems-center justify-center">
 			<h1>Select your date of birth</h1>
 			<Calendar bind:selected_day={day} bind:selected_month={month} bind:selected_year={year} />
 		</div>
-		<div class="space-y-4 p-10 tems-center justify-center h-1/2  ">
+		<div class="space-y-4  tems-center justify-center h-1/2  ">
 			<h1>Select your Location</h1>
 			<WorldMap bind:averageAge={avgAge} />
 		</div>
