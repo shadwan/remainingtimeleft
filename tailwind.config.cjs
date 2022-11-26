@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    fontFamily: {
+      'display': ['Edu QLD Beginner', 'cursive']
+    },
     extend: {
       gridTemplateColumns: {
         // Simple 16 column grid
